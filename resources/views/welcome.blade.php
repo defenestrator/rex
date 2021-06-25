@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon-200.png">
+    <link rel="apple-touch-icon-precomposed" href="favicon-120.png">
+    <link rel="icon" href="favicon-200.png">
     <title>{{ config('app.name') }}</title>
 
     <!-- Fonts -->
