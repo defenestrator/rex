@@ -423,7 +423,7 @@
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                 <div class="h-16 w-auto text-gray-700 sm:h-20">
-                    <div class="p-4 text-center" style="color:#EF3B2D; font-size:3rem;">
+                    <div class="px-4 text-center" style="color:#EF3B2D; font-size:2.6rem;">
                         Reptile Experience Center
                     </div>
                 </div>
