@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 
-<body class="antialiased">
-    <div class="block items-top justify-center bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0 px-2"
-        style="height:50vh; min-height:360px;">
+<body class="antialiased bg-gray-100 dark:bg-gray-900">
+    <div class="block items-top justify-center sm:items-center py-4 sm:pt-0 px-2"
+        style="height:44vh; min-height:360px;">
         @if (Route::has('login'))
             <div class="fixed top-0 right-0 px-6 py-4 block">
                 @auth
@@ -33,9 +33,8 @@
                 title="Intermountain Reptile Experience Center">
         </div>
     </div>
-    <div class="flex items-top justify-center bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0 px-2">
-
-        <div class="mx-auto, text-3xl" style="height:50vh;">
+    <div class="flex items-top justify-center sm:items-center py-4 sm:pt-0 px-2 mt-4">
+        <div class="mx-auto, text-3xl">
             Coming soon!
         </div>
     </div>
