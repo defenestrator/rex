@@ -1633,6 +1633,10 @@ select {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 }
+.text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
 .font-medium {
 	font-weight: 500;
 }
@@ -1782,10 +1786,6 @@ select {
 }
 .ring-opacity-5 {
 	--tw-ring-opacity: 0.05;
-}
-.grayscale {
-	--tw-grayscale: grayscale(100%);
-	filter: var(--tw-filter);
 }
 .filter {
 	filter: var(--tw-filter);
@@ -2038,10 +2038,6 @@ select {
 		margin-left: 1.5rem;
 	}
 
-	.sm\:ml-0 {
-		margin-left: 0px;
-	}
-
 	.sm\:block {
 		display: block;
 	}
@@ -2056,10 +2052,6 @@ select {
 
 	.sm\:h-10 {
 		height: 2.5rem;
-	}
-
-	.sm\:h-20 {
-		height: 5rem;
 	}
 
 	.sm\:w-10 {
@@ -2184,10 +2176,6 @@ select {
 
 	.sm\:text-left {
 		text-align: left;
-	}
-
-	.sm\:text-right {
-		text-align: right;
 	}
 }
 @media (min-width: 768px) {
