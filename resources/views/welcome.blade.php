@@ -10,9 +10,12 @@
     <link rel="icon" href="favicon-120.png">
     <title>{{ config('app.name') }}</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
 </head>
 
-<body class="antialiased bg-gray-100 dark:bg-gray-900">
+<body class="antialiased bg-gray-100 dark:bg-gray-900"
+    style="min-height: 100vh; background:linear-gradient(rgba(245,245, 245, 0.05), rgba(20,40,20,1.0)) center top no-repeat">
     <div class="block items-top justify-center sm:items-center py-4 sm:pt-0 px-2"
         style="height:44vh; min-height:360px;">
         @if (Route::has('login'))
