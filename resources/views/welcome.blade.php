@@ -13,8 +13,8 @@
 </head>
 
 <body class="antialiased">
-    <div class="flex items-top justify-center bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0 px-2"
-        style="height:50vh;">
+    <div class="block items-top justify-center bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0 px-2"
+        style="height:50vh; min-height:360px;">
         @if (Route::has('login'))
             <div class="fixed top-0 right-0 px-6 py-4 block">
                 @auth
