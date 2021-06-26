@@ -60,6 +60,6 @@ return [
     |
     */
 
-    'profile_photo_disk' => 'public',
+    'profile_photo_disk' => env('JETSTREAM_PHOTO_DISK', 'public'),
 
 ];
