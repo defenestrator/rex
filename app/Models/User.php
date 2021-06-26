@@ -66,6 +66,6 @@ class User extends Authenticatable //implements MustVerifyEmail
      */
     protected function defaultProfilePhotoUrl()
     {
-        return 'https://ui-avatars.com/api/?name='.urlencode($this->name).'&color=006633&background=EBF4EB';
+        return 'https://ui-avatars.com/api/?name='.urlencode($this->name).'&color=006633&background=D4E4D0';
     }
 }

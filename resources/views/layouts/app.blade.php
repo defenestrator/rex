@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="favicon-200.png">
-    <link rel="apple-touch-icon-precomposed" href="favicon-120.png">
-    <link rel="icon" href="favicon-120.png">
+    <meta name="msapplication-TileImage" content="/favicon-200.png">
+    <link rel="apple-touch-icon-precomposed" href="/favicon-120.png">
+    <link rel="icon" href="/favicon-120.png">
     <title>{{ config('app.name') }}</title>
 
     <!-- Fonts -->
