@@ -15,7 +15,7 @@
 </head>
 
 <body class="antialiased bg-gray-100 dark:bg-gray-900"
-    style="min-height: 100vh; background:linear-gradient(rgba(245,245, 245, 0.05), rgba(20,40,20,1.0)) center top no-repeat">
+    style="min-height: 100vh; background:linear-gradient(rgba(245,245, 245, 0.05), rgba(60,80,60,1.0)) center top no-repeat">
     <div class="block items-top justify-center sm:items-center py-4 sm:pt-0 px-2"
         style="height:44vh; min-height:360px;">
         @if (Route::has('login'))
@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="flex items-top justify-center sm:items-center py-4 sm:pt-0 px-2 mt-4">
-        <div class="mx-auto, text-3xl">
+        <div class="mx-auto, text-3xl" style="letter-spacing:0.25rem;">
             Coming soon!
         </div>
     </div>
