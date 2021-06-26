@@ -50,6 +50,11 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
+            'cache' => [
+                'store' => 'redis',
+                'expire' => 3.154e+7,
+                'prefix' => 'gem_reptiles_image_cache',
+            ],
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
         ],
 
