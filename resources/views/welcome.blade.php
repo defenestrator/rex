@@ -7,8 +7,7 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="favicon-200.png">
     <link rel="apple-touch-icon-precomposed" href="favicon-120.png">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon-100.png">
+    <link rel="icon" href="favicon-120.png">
     <title>{{ config('app.name') }}</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
