@@ -7,12 +7,8 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="favicon-200.png">
     <link rel="apple-touch-icon-precomposed" href="favicon-120.png">
-    <link rel="icon" href="favicon-200.png">
+    <link rel="icon" href="favicon.ico">
     <title>{{ config('app.name') }}</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
     <!-- Styles -->
     <style>
         /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -420,7 +416,8 @@
             </div>
         @endif
         <div class="mt-8" style="width:300px; min-width:200px;">
-            <img class="p-4" src="/img/logo.png" alt="Intermountain Reptile Experience Center">
+            <img class="py-4" src="/img/logo.png" alt="Intermountain Reptile Experience Center"
+                title="Intermountain Reptile Experience Center">
         </div>
 
     </div>
