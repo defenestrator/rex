@@ -68,4 +68,51 @@ class User extends Authenticatable //implements MustVerifyEmail
     {
         return 'https://ui-avatars.com/api/?name='.urlencode($this->name).'&color=006633&background=D4E4D0';
     }
+
+    /**
+     * Update the user's profile photo.
+     *
+     * @param  \Illuminate\Http\UploadedFile  $photo
+     * @return void
+     */
+    public function updateProfilePhoto(UploadedFile $photo)
+    {
+        tap($this->profile_photo_path, function ($previous) use ($photo) {
+            $options = [
+                'visibility'    =>  'public',
+                'Cache-Control' =>  'max-age=31540000',
+                'Expires'       =>  now()->addRealDecade()->format('D, d M Y H:i:s T')
+            ];
+
+            $size = 200;
+
+            $i = Intervention::make($photo)
+            ->resize($size, $size, function ($constraint) {
+                $constraint->aspectRatio();
+                $constraint->upsize();
+            })
+            ->fit($size, $size)
+            ->encode('webp')
+            ->stream();
+
+            $hash = Str::uuid();
+
+            $fileName = $hash . '.webp';
+
+            if (config('jetstream.profile_photo_disk') === "local")
+            {
+                Storage::disk($this->profilePhotoDisk())->getDriver()->put('public/profile-photos/'. $fileName , $i->__toString(), $options);
+            } else {
+                Storage::disk($this->profilePhotoDisk())->getDriver()->put("profile-photos/". $fileName , $i->__toString(), $options);
+            }
+
+            $this->forceFill([
+                'profile_photo_path' => "profile-photos/" . $fileName
+            ])->save();
+
+            if ($previous) {
+                Storage::disk($this->profilePhotoDisk())->delete($previous);
+            }
+        });
+    }
 }
